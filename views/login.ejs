@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Login Kriova</title>
 </head>
 <body>
-    <h1 class="title">KRIOVA SignIn</h1>
+    <img src="/imgs/bg1.jpg" class="backgroundImage" alt="image">
+    <h1 class="title">Kriova SignIn</h1>
     <form action="/login" method="POST" class="form">
-        Email:<input type="text" name="email" placeholder="Enter your Email" required></br>
-        Password:<input type="password" name="password" placeholder="Enter your Password" required></br>
-        <button type="submit">Login</button>
+        <input type="text" name="email" placeholder="Enter your Email" required></br>
+        <input type="password" name="password" placeholder="Enter your Password" required></br>
+        <button type="submit">Login</button></form></br>
     </form>
-    <a href="/forgotPassword" id="forgotPassword" class="linksExt">Forgot Password</a>
-    <a href="/signup" class="linksExt">Sign Up</a>
+    <div id="links">
+        <a href="/forgotPassword" id="forgotPassword" class="linksExt">Forgot Password</a></br>
+        <a href="/signup" class="linksExt">Sign Up</a>
+    </div>
+    
 </body>
 </html>

@@ -1,0 +1,281 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 1.2;
+  color: #F7F7F7;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__section {
+  display: flex;
+  flex-direction: column;
+  background-color: #02160B;
+  background: url(/imgs/hero.jpg) no-repeat center;
+  background-size: cover;
+}
+
+header {
+  position: relative;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 19px;
+}
+
+.header__logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header__logo-pic {
+  margin-right: 15px;
+}
+
+.header__logo-text {
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__item {
+  margin-right: 60px; /* разобраться с отступами в меню */
+  font-size: 23px;
+  line-height: 60px;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+  border: 2px solid #CD6326;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 2px 23px;
+}
+
+.header__item:last-child:hover {
+  background: #CD6326;
+}
+
+.header__item:last-child:active {
+  background: #8F5613;
+}
+
+.header__link {
+  font-size: 23px;
+  line-height: 60px;
+  color: #F7F7F7;
+  text-decoration: none;
+}
+
+.survival {
+  min-height: 100vh;
+  padding-top: 199px;
+}
+
+.survival__title {
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 2px;
+  color: #CD6326;
+  margin-bottom: 51px;
+}
+
+.survival__subtitle {
+  max-width: 274px;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 49px;
+}
+
+.survival__button {
+  padding: 16px 42px;
+  background: #CD6326;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #F7F7F7;
+  border: 0;
+}
+
+.survival__button:hover {
+  background: #E39128;
+}
+
+.survival__button:active {
+  background: #8F5613;
+}
+
+/* Latest articles */
+
+.latest-articles {
+  background-color: #CCCCCC;
+}
+
+.latest-articles__title {
+  padding-top: 120px; /* костыли с отступами?? */
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.latest-articles__subtitle {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #666666;
+  padding-bottom: 120px;
+}
+
+.latest-articles__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  padding-bottom: 240px;
+}
+
+.latest-articles__card-deer { /* Вот так и появляется говнокод */
+  width: 300px;
+  height: 360px;
+  background: url(../img/deer.jpg);
+}
+
+.latest-articles__card-squirrel {
+  width: 300px;
+  height: 360px;
+  background: url(../img/squirrel.jpg);
+}
+
+.latest-articles__card-bird {
+  width: 300px;
+  height: 360px;
+  background: url(../img/bird.jpg);
+}
+
+.latest-articles__card-articles__title {
+  text-align: center;
+  padding-top: 247px;
+  padding-bottom: 10px;
+}
+
+.latest-articles__card-text {
+  text-align: center;
+}
+
+.latest-articles__text {
+  text-align: center;
+  font-size: 27px;
+  line-height: 40px;
+  color: #333333;
+  padding-bottom: 59px;
+}
+
+.mailform {
+  padding-left: 389px;
+}
+
+.mailform__block {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 239px;
+}
+
+.mailform__field {
+  font-size: 23px;
+  border: 1px solid #666;
+  background-color: transparent;
+  color: #666;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.mailform__submit {
+  padding: 16px 42px;
+  background: #CD6326;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #F7F7F7;
+  border: 1px solid #cd6326;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.mailform__submit:hover {
+  background: #E39128;
+}
+
+.mailform__submit:active {
+  background: #8F5613;
+}
+
+.footer {
+  background: url(../img/footer.jpg)
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__logo-nav {
+  flex-grow: 50%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.footer__logo-pic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.footer__logo-text {
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.footer__nav {
+  flex-frow: 50%;
+}
+
+.footer-nav__link {
+  font-size: 23px;
+  line-height: 60px;
+  color: #F7F7F7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666666;
+}
