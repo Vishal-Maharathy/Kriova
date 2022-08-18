@@ -5,6 +5,24 @@ const bcrypt = require('bcrypt');
 require('dotenv').config();
 const connectDB = require('./config/mongoose');
 const sassMiddleware = require('node-sass-middleware');
+const flash = require('express-flash')
+const session = require('express-session');
+// flash messages
+app.use(session({
+    secret:'testSecret',
+    saveUninitialized: true,
+    resave: true
+}));
+app.use(flash());
+let setFlash = function(req, res, next){
+    res.locals.flash = {
+        //what kind of flash message to flash(succes type(green), error type(red) is being set up here)
+        success : req.flash('success'),
+        error : req.flash('error')
+    }
+    next();
+}
+app.use(setFlash);
 
 app.use(express.urlencoded({ extended: false }));
 app.set('view-engine', 'ejs');
